@@ -11,9 +11,11 @@ header{
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 
 li {
     padding: 5px;
@@ -30,6 +32,11 @@ li a {
     text-decoration: none;
 }
 
+li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 .logo {
     margin-right: auto;
     width: 5%;
@@ -39,3 +46,4 @@ li a {
 .logo-img {
     width: 100%;
 }
+
