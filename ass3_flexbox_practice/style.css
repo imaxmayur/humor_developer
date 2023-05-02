@@ -23,9 +23,18 @@ input {
 
 }
 
+.text {
+    flex-grow: 1;
+}
+
+.email {
+    flex-grow: 3;
+}
+
 .submit_btn {
     background-color: hotpink;
     color: white;
+    flex-grow: 1;
 }
 
 .submit_btn:hover {
