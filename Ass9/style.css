@@ -1,0 +1,18 @@
+.click-btn {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 7px 15px;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-color {
+    color: white;
+    background-color: Green;
+}

@@ -28,7 +28,7 @@ body {
     background: #333;
     padding: 20px;
     font-size: 20px;
-    color: #fff;
+    color: lightgray;
     text-align: center;
     transition: 600ms;
   }
