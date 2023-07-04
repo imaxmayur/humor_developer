@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Example</title>
+  </head>
+  <body>
+    <div id="listContainer"></div>
+
+    <script>
+      let list = [
+        ["Animals", "Lion", "Cat", "Dog", "Deer"],
+        ["Fruits", "Apple", "Banana", "Guava", "Litchi"],
+        ["Counties", "USA", "India", "China", "Africa", "Germany"],
+      ];
+
+      // Get the list container element
+      const listContainer = document.querySelector("#listContainer");
+
+      // Iterate over the array
+      for (let i = 0; i < list.length; i++) {
+        const heading = list[i][0];
+
+        // Create the heading element
+        const headingElement = document.createElement("h2");
+        headingElement.textContent = heading;
+        listContainer.appendChild(headingElement);
+
+        // Create the unordered list element
+        const listElement = document.createElement("ul");
+
+        // Iterate over the submenus
+        for (let j = 1; j < list[i].length; j++) {
+          const submenu = list[i][j];
+
+          // Create the list item element
+          const listItemElement = document.createElement("li");
+          listItemElement.textContent = submenu;
+          listElement.appendChild(listItemElement);
+        }
+
+        // Add the unordered list to the list container
+        listContainer.appendChild(listElement);
+      }
+    </script>
+  </body>
+</html>
